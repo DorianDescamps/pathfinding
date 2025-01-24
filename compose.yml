@@ -1,0 +1,11 @@
+services:
+  pathfinder_app:
+    image: python:3.13-alpine
+    ports:
+      - "8082:8082"
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: >
+      sh -c "pip install --no-cache-dir pandas matplotlib &&
+        python server.py"
