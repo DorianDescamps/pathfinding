@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block title %}Accueil - Upload des CSV{% endblock %}
+
+{% block content %}
+<h1>Upload des Fichiers CSV</h1>
+
+<form action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+  <div class="mb-3">
+    <label for="map_file">Fichier map.csv</label>
+    <input type="file" class="form-control" name="map_file" required />
+  </div>
+  <div class="mb-3">
+    <label for="strategic_file">Fichier strategic_points.csv</label>
+    <input type="file" class="form-control" name="strategic_file" required />
+  </div>
+  <div class="mb-3">
+    <label for="interest_file">Fichier interest_points.csv</label>
+    <input type="file" class="form-control" name="interest_file" required />
+  </div>
+  <button type="submit" class="btn btn-primary">Charger</button>
+</form>
+{% endblock %}

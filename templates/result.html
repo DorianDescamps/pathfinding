@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block title %}Résultat Pathfinding{% endblock %}
+
+{% block content %}
+<h2>Résultat</h2>
+
+<p><b>Départ :</b> {{ start }} | <b>Arrivée :</b> {{ end }}</p>
+<p><b>Ordre des points visités :</b> {{ final_route }}</p>
+<p><b>Coût total :</b> {{ final_cost }}</p>
+<p><b>Chemin complet ({{ full_path|length }} cases) :</b> {{ full_path }}</p>
+<p><b>Points stratégiques gagnés :</b> {{ strategic_points_total }}</p>
+<p><b>Points d'intérêt gagnés :</b> {{ interest_points_total }}</p>
+<h4>Total (points - coût) : {{ total_score }}</h4>
+
+<hr>
+<p>Temps d'exécution : {{ exec_time|round(2) }} secondes</p>
+
+<h4>Carte et Chemin</h4>
+<img src="data:image/png;base64,{{ base64_image }}" alt="Map" />
+
+<a href="{{ url_for('index') }}" class="btn btn-secondary mt-3">Recommencer</a>
+{% endblock %}
