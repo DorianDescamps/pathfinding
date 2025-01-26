@@ -2,13 +2,13 @@ services:
   flask_app:
     image: python:3.13-alpine
     ports:
-      - "8082:8082"
+      - "8082:8081"
     volumes:
       - .:/app
     working_dir: /app
     environment:
       - FLASK_APP=app.py
       - FLASK_RUN_HOST=0.0.0.0
-      - FLASK_RUN_PORT=8082
+      - FLASK_RUN_PORT=8081
     command: >
         sh -c "pip install --no-cache-dir flask pandas matplotlib && flask run"
