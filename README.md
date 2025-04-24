@@ -56,11 +56,9 @@ C'est une application web en Flask qui permet de calculer un chemin optimal sur 
 
 ## Captures d'écran
 
-```markdown
 ![Page d'accueil](https://github.com/DorianDescamps/pathfinding/blob/eaf8899c598484af06e5fd376a14a7341639c99c/screenshots/index.png)
 ![Formulaire de paramétrage](https://github.com/DorianDescamps/pathfinding/blob/eaf8899c598484af06e5fd376a14a7341639c99c/screenshots/form.png)
 ![Résultat du pathfinding](https://github.com/DorianDescamps/pathfinding/blob/eaf8899c598484af06e5fd376a14a7341639c99c/screenshots/result.png)
-```
 
 ## Auteurs
 
