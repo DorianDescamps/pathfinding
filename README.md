@@ -19,8 +19,8 @@ C'est une application web en Flask qui permet de calculer un chemin optimal sur 
 1. Cloner le dépôt :
 
    ```bash
-   git clone <https://github.com/DorianDescamps/pathfinding>
-   cd <pathfinding>
+   git clone https://github.com/DorianDescamps/pathfinding
+   cd pathfinding
    ```
 
 2. Lancer avec Docker Compose :
@@ -57,9 +57,9 @@ C'est une application web en Flask qui permet de calculer un chemin optimal sur 
 ## Captures d'écran
 
 ```markdown
-![Page d'accueil](screenshots/index.png)
-![Formulaire de paramétrage](screenshots/form.png)
-![Résultat du pathfinding](screenshots/result.png)
+![Page d'accueil](https://github.com/DorianDescamps/pathfinding/blob/eaf8899c598484af06e5fd376a14a7341639c99c/screenshots/index.png)
+![Formulaire de paramétrage](https://github.com/DorianDescamps/pathfinding/blob/eaf8899c598484af06e5fd376a14a7341639c99c/screenshots/form.png)
+![Résultat du pathfinding](https://github.com/DorianDescamps/pathfinding/blob/eaf8899c598484af06e5fd376a14a7341639c99c/screenshots/result.png)
 ```
 
 ## Auteurs
