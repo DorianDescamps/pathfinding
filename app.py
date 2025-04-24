@@ -59,15 +59,16 @@ def upload():
     GLOBAL_MAP_DF = map_df
 
     # strategic_points
-    GLOBAL_STRATEGIC_POINTS = [tuple(row) for row in strat_df.values]
+    GLOBAL_STRATEGIC_POINTS = [
+        tuple(int(v) for v in row)
+        for row in strat_df.values
+    ]
 
     # interest_points
     d = {}
     disp_interest = []
     for _, row in interest_df.iterrows():
-        x = row[0]
-        y = row[1]
-        gain = row[2]
+        x, y, gain = int(row[0]), int(row[1]), int(row[2])
         d[(x, y)] = gain
         disp_interest.append((x, y))
 
